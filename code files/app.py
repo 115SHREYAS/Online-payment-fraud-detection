@@ -35,7 +35,7 @@ def predict():
 
         prediction = model.predict(df)[0]
 
-        result = "Fraud" if prediction == 1 else "Not Fraud"
+        result = "Fraudulent" if prediction == 1 else "Not Fraudulent"
 
         return render_template('submit.html', result=result)
 
